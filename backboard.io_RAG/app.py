@@ -15,7 +15,7 @@ async def main():
     # Upload document
     document = await service.upload_and_index_document(
         assistant.assistant_id,
-        "my_document.pdf"
+        "documents/test.txt"
     )
 
     print_divider()

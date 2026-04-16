@@ -24,6 +24,8 @@ class BackboardService:
         while True:
             status = await self.client.get_document_status(document.document_id)
 
+            print("Status:", status.status)
+
             if status.status == "indexed":
                 print("Document indexed successfully!")
                 return document
